@@ -52,6 +52,7 @@ html,body {
     height:400px;
     width:400px;
     background-color:green;
+    position:relative;
     left:450px;
     bottom:400px;
 }
@@ -59,12 +60,14 @@ html,body {
     height:400px;
     width:400px;
     background-color:yellow;
+    position:relative;
     bottom:280px;
 }
 #rack4{
     height:400px;
     width:400px;
     background-color:blue;
+    position:relative;
     left:450px;
     bottom:680px;
 }
@@ -92,6 +95,7 @@ a:link {
   background-color: transparent;
   text-decoration: none;
 }
+
 
 
 /* Index Navigation Bar*/
