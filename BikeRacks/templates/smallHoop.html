@@ -6,6 +6,10 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" type="text/css" href="/style.css" /> 
+
+      <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+      <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
    </head>
    <body>
     <div id="header">
@@ -64,5 +68,47 @@
             </div>
         </div>
     </div>
+
+    <div>
+        <table id="bikeData">
+            <thead>
+                <tr>
+                    <th>Object ID</th>
+                    <th>Borough Name</th>
+                    <th>Rack Address</th>
+                    <th>Bike Rack Type</th>
+                    <th>Date Installed</th>
+                </tr>
+                <tbody>
+                </tbody>
+            </thead>
+        </table>
+    </div>
+
+    <script>
+        $.ajax({
+            type     : "GET",
+            url      : 'https://data.cityofnewyork.us/resource/au7q-njtk.json',
+            dataType : 'json',
+            success  : function(data) {
+        
+                data.forEach(function(post) {
+                    var td1 = $('<td />', {html : post.objectid}),
+                        td2 = $('<td />', {html : post.boro_name}), 
+                        td3 = $('<td />', {html : post.ifoaddress}), 
+                        td4 = $('<td />', {html : post.assetsubty}),
+                        td5 = $('<td />', {html : post.date_inst}),
+                        tr  = $('<tr />');
+                    $( '#bikeData' ).append( tr.append(td1, td2, td3, td4, td5,) );
+                });
+                let table = new DataTable('#bikeData', 
+                {
+                    "search": {  
+                        "search": "Small Hoop"
+                    }
+                });          
+            }
+        });
+    </script>
    </body>
 </html>
