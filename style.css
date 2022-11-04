@@ -87,6 +87,12 @@ h2 {
     color:white;
 }
 
+a:link {
+  color: var(--lightblue);
+  background-color: transparent;
+  text-decoration: none;
+}
+
 
 /* Index Navigation Bar*/
 ul {
