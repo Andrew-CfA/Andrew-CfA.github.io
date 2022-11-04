@@ -11,8 +11,8 @@ html,body {
     font-style: normal;
     overflow-x: hidden; 
     width: 100%;
-    /*box-sizing: border-box;*/
-    /*position: relative;*/
+    box-sizing: border-box;
+    position: relative;
     background-color: darkgreen;
 }
 
@@ -27,9 +27,7 @@ html,body {
     margin: 0 auto;
   }
   
-#content {
-margin-top: 100px;
-}
+
 
 #main{
     background-color: var(--darkblue);
@@ -54,7 +52,6 @@ margin-top: 100px;
     height:400px;
     width:400px;
     background-color:green;
-    position:relative;
     left:450px;
     bottom:400px;
 }
@@ -62,17 +59,14 @@ margin-top: 100px;
     height:400px;
     width:400px;
     background-color:yellow;
-    position:relative;
     bottom:280px;
 }
 #rack4{
     height:400px;
     width:400px;
     background-color:blue;
-    position:relative;
     left:450px;
     bottom:680px;
-    object-fit:contain;
 }
 
 img{
