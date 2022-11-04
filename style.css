@@ -93,7 +93,7 @@ h2 {
 a:link {
   color: var(--lightblue);
   background-color: transparent;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 
