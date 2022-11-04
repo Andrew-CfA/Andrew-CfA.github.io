@@ -6,25 +6,28 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" type="text/css" href="/style.css" /> 
+
+      <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+  
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+
    </head>
    <body>
         <div>
             <table id="bikeData">
                 <thead>
                     <tr>
-                        <th>objectid</th>
-                        <th onclick="sortTable(1)">Borrough Name</th>
-                        <th>assetsubty</th>
-                        <th>date_inst</th>
+                        <th>Object ID</th>
+                        <th>Borough Name</th>
+                        <th>Bike Rack Type</th>
+                        <th>Date Installed</th>
                     </tr>
-                    <tbody id="dataOutput">
-                        
+                    <tbody>
                     </tbody>
                 </thead>
             </table>
         </div>
-
-
-    <script src="script.js"></script>
-       </body>
+    <script src="scriptAJAX.js"></script>
+    </body>
 </html>
