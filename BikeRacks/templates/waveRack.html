@@ -8,52 +8,60 @@
       <link rel="stylesheet" type="text/css" href="style.css" /> 
    </head>
    <body>
-      <div class=whitemain>
-        <h2 style="text-align:left"><b><a>Bike Rack Information</a></b></h2>
-        <p style="padding-bottom:20px; text-align: left;">Welcome! Here you will find information about NYC's Bike Racks</p>
-
-        <div class="column">
-            <div class="imgBlock">
-                    <a href="/BikeRacks/templates/waveRack.html"> <img src="images/waveRack.png" alt="waveRack"> </a>
-            </div>
-            <div class="wordblock">
-                <p style="margin-top:0;"><b></b></p>
-                <h1>Wave Rack</h1> 
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="imgBlock">
-                    <img src="images/waveRack.png" alt="waveRack">
-            </div>
-            <div class="wordblock">
-                <p style="margin-top:0;"><b></b></p>
-                <h1>U-Rack</h1> 
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="imgBlock">
-                    <img src="images/waveRack.png" alt="waveRack">
-            </div>
-            <div class="wordblock">
-                <p style="margin-top:0;"><b></b></p>
-                <h1>Large Hoop</h1> 
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="imgBlock">
-                    <img src="images/waveRack.png" alt="waveRack">
-            </div>
-            <div class="wordblock">
-                <p style="margin-top:0;"><b></b></p>
-                <h1>Small Hoop</h1> 
-            </div>
-        </div>        
-        
+    <div id="header">
+        <header style="align-content: center; align-items: center;">
+            <img src="images/skyline1.png" style="object-fit: cover; width: 36%; height: 20%; align-items: center;" alt="skyline">
+        </header>
     </div>
 
+    
 
+    <div id="background">
+        <div id="main">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#news">News [Coming Soon]</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+            <h2 style="text-align:left"><b><a>Bike Rack Information</a></b></h2>
+
+            <h1> <a id="about"> About: </a></h1>
+            <h1> Welcome, here you will find information about New York's many types of bike racks! Click on any picture below to learn more about the bike rack</h1>
+            <h1> To find out city data about bike racks or to find your nearest bike rack please follow this <a href="tabularDataView/tabularDataView.html">link</a> </h1>
+ 
+            <div id="waveRack">
+                <a href="BikeRacks/templates/waveRack.html"> <img src="images/waveRack.png" alt="waveRack"> </a>
+                <div class="wordblock">
+                    <p style="margin-top:0;"><b></b></p>
+                    <h1>Wave Rack</h1> 
+                </div>
+            </div>
+
+            <div id="uRack">
+                <a href="BikeRacks/templates/uRack.html"> <img src="images/uRack.jpg" alt="uRack"> </a>
+                <div class="wordblock">
+                    <p style="margin-top:0;"><b></b></p>
+                    <h1>U Rack</h1> 
+                </div>
+            </div>
+
+            <div id="largeHoop">
+                <a href="BikeRacks/templates/largeHoop.html"> <img src="images/largeHoop.jpg" alt="waveRack"> </a>
+                <div class="wordblock">
+                    <p style="margin-top:0;"><b></b></p>
+                    <h1>Large Hoop</h1> 
+                </div>
+            </div>
+
+            <div id="smallHoop">
+                <a href="BikeRacks/templates/smallHoop.html"> <img src="images/smallHoop2.jpg" alt="waveRack"> </a>
+                <div class="wordblock">
+                    <p style="margin-top:0;"><b></b></p>
+                    <h1>Small Hoop</h1> 
+                </div>
+            </div>
+        </div>
+    </div>
    </body>
 </html>
