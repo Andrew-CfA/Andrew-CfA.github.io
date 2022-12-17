@@ -30,7 +30,7 @@ html,body {
 
 
 #main{
-    background-color: var(--darkblue);
+    background-color: white;
     padding:5%;
     box-shadow: 0 4px 8px 0 var(--lightblue), 0 6px 20px 0 var(--lightblue);
 }
@@ -52,11 +52,11 @@ img{
 /* Text*/
 h1{
     font-size: 30px;
-    color:white;
+    color:var(--darkblue);
 }
 h2 {
     font-size: max(5vw, 24px);
-    color:white;
+    color:var(--darkblue);
 }
 
 
