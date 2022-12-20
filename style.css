@@ -1,4 +1,4 @@
-:root {
+/*:root {
   --darkblue: #033085;
   --lightblue: #55A1D3;
   --orange: #F27B1F;
@@ -27,7 +27,6 @@ img{
   object-fit:fill;
 }
 
-/* divs */
 #main{
   background-color: white;
   box-shadow: 0 4px 8px 0 var(--lightblue), 0 6px 20px 0 var(--lightblue);
@@ -49,7 +48,6 @@ img{
   box-shadow: 0 4px 8px 0 var(--lightblue), 0 6px 20px 0 var(--lightblue);
 }
 
-/* Text*/
 h1{
   font-size: 20px;
   color:var(--darkblue);
@@ -60,7 +58,7 @@ h2 {
 }
 
 
-/* Index Navigation Bar*/
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -84,7 +82,7 @@ li a {
 li a:hover {
   background-color: var(--lightblue);
   color: white;
-}
+} */
 
 /* boot strap section */
 
