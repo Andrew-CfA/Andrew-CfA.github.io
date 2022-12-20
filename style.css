@@ -1,87 +1,106 @@
-:root {
-  --darkblue: #033085;
-  --lightblue: #55A1D3;
-  --orange: #F27B1F;
-  --yellow: #F9B316;
-  --gray: #999999;
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
 }
 
-html,body {
-  font-family: 'Segoe UI Symbol';
-  font-style: normal;
-  overflow-x: hidden; 
-  width: 100%;
-  box-sizing: border-box;
-  position: relative;
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
   background-color: transparent;
+  border-bottom: .25rem solid transparent;
 }
 
-#background{
-  background-color: white;
-  padding: 5% 5%;
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
 }
 
-img{
-  width:100%;
-  height:100%;
-  object-fit:fill;
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
 }
 
-/* divs */
-#main{
-  background-color: white;
-  box-shadow: 0 4px 8px 0 var(--lightblue), 0 6px 20px 0 var(--lightblue);
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
 }
 
-#about{
-  background-color: white;
-  padding:5%;
-  box-shadow: 0 4px 8px 0 var(--lightblue), 0 6px 20px 0 var(--lightblue);
-}
-
-#projects{
-  background-color: white;
-  box-shadow: 0 4px 8px 0 var(--lightblue), 0 6px 20px 0 var(--lightblue);
-}
-
-#contact{
-  background-color: white;
-  box-shadow: 0 4px 8px 0 var(--lightblue), 0 6px 20px 0 var(--lightblue);
-}
-
-/* Text*/
-h1{
-  font-size: 20px;
-  color:var(--darkblue);
-}
-h2 {
-  font-size: max(5vw, 24px);
-  color:var(--darkblue);
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
 }
 
 
-/* Index Navigation Bar*/
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #f1f1f1;
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
 }
-  
-li {
-  float: left;
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
 }
 
-li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
 
-li a:hover {
-  background-color: var(--lightblue);
-  color: white;
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
 }
