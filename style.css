@@ -1,3 +1,4 @@
+/* old CSS found here */
 :root {
   --darkblue: #033085;
   --lightblue: #55A1D3;
@@ -28,14 +29,10 @@ img{
 }
 
 /* divs */
-#main{
-  background-color: white;
-  box-shadow: 0 4px 8px 0 var(--lightblue), 0 6px 20px 0 var(--lightblue);
-}
 
 #about{
   background-color: white;
-  padding:5%;
+  
   box-shadow: 0 4px 8px 0 var(--lightblue), 0 6px 20px 0 var(--lightblue);
 }
 
@@ -66,7 +63,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: white;
 }
   
 li {
@@ -84,33 +81,4 @@ li a {
 li a:hover {
   background-color: var(--lightblue);
   color: white;
-}
-
-/* boot strap section */
-
-html,
-body,
-header,
-header section {
-  height: 100%;
-}
-
-.bg-image-vertical {
-  position: relative;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: auto 100%;
-}
-
-.display-1,
-.display-2,
-h5 {
-  font-weight: 700 !important;
-}
-
-@media (min-width: 1600px) {
-  .display-1 {
-    font-size: 10rem;
-  }
 }
