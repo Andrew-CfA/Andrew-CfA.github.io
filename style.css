@@ -1,84 +1,44 @@
-/* old CSS found here */
-:root {
-  --darkblue: #033085;
-  --lightblue: #55A1D3;
-  --orange: #F27B1F;
-  --yellow: #F9B316;
-  --gray: #999999;
+body {
+  font: 20px "segoi", sans-serif;
+  line-height: 1.8;
+  color: #f5f6f7;
 }
 
-html,body {
-  font-family: 'Segoe UI Symbol';
-  font-style: normal;
-  overflow-x: hidden; 
-  width: 100%;
-  box-sizing: border-box;
-  position: relative;
-  background-color: transparent;
+p {font-size: 16px;}
+.bg-1 {
+  background-color: #1abc9c; /* Green */
+  color: #ffffff;
 }
 
-#background{
-  background-color: white;
-  padding: 5% 5%;
+.bg-2 {
+  background-color: #474e5d; /* Dark Blue */
+  color: #ffffff;
+}
+.bg-3 {
+  background-color: #ffffff; /* White */
+  color: #555555;
 }
 
-img{
-  width:100%;
-  height:100%;
-  object-fit:fill;
+.bg-4 {
+  background-color: #2f2f2f;
+  color: #ffffff;
 }
 
-/* divs */
-
-#about{
-  background-color: white;
-  
-  box-shadow: 0 4px 8px 0 var(--lightblue), 0 6px 20px 0 var(--lightblue);
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
-#projects{
-  background-color: white;
-  box-shadow: 0 4px 8px 0 var(--lightblue), 0 6px 20px 0 var(--lightblue);
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
 }
 
-#contact{
-  background-color: white;
-  box-shadow: 0 4px 8px 0 var(--lightblue), 0 6px 20px 0 var(--lightblue);
-}
-
-/* Text*/
-h1{
-  font-size: 20px;
-  color:var(--darkblue);
-}
-h2 {
-  font-size: max(5vw, 24px);
-  color:var(--darkblue);
-}
-
-
-/* Index Navigation Bar*/
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: white;
-}
-  
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: var(--lightblue);
-  color: white;
+.navbar-nav li a:hover {
+  color: #1abc9c !important;
 }

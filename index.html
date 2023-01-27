@@ -8,49 +8,84 @@
       <!-- My own style sheet -->
       <link rel="stylesheet" type="text/css" href="style.css" /> 
       <!-- boot strap style sheet -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
    </head>
    <body>
 
     <div id="background">
-      <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-      </ul>
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Me</a>
+          </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        </div>
+      </nav>
 
 
+      <!-- First Container-->
       <div id="about">
-        <div class="p-3 bg-danger text-white rounded">
-          <h2 style="text-align:left"><b>Andrew Gagnez: I'm here to help</b></h2>
+        <div class="container-fluid bg-1 text-center">
+          <h3><b>Andrew Gagnez: I'm here to help</b></h3>
       
-          <h1> Technology for the people </h1>
-          <h1> Avid hardware enthusiast </h1>
-          <h1> Just some guy</h1>
-          <h1> San Jose State: Computer Engineer Degree </h1>
-          <h1> Rock Climbing </h1> 
-          <h1> Super Smash </h1>
+          <h3> Technology for the people </h3>
+          <h3> Avid hardware enthusiast </h3>
+          <img src="images/Andrew.png" class="img-responsive img-circle" style="display:inline " alt="Andrew">
+          <h3> Just some guy</h3>
+          <h3> San Jose State: Computer Engineer Degree </h3>
+          <h3> Rock Climbing </h3> 
+          <h3> Super Smash </h3>
         </div>
       </div>
 
+      <!-- Second Container-->
       <div id="projects">
-          <h1>Projects</h1> 
-          <img src="images/waveRack1.png" alt="waveRack">
-          <div class="wordblock">
-              <p style="margin-top:0;"><b></b></p>
+          <div class="container-fluid bg-2 text-center">
+            <h3>Projects</h3>
+            <div class="col-sm-4">
+              <p>Get FoCo is Fort Collins first...</p>
+              <img src="images/uRack1.jpg" class="img-responsive" style="width:100%" alt="Get FoCo">
+            </div>
+
+            <div class="col-sm-4">
+              <p>Get FoCo is Fort Collins first...</p>
+              <img src="images/uRack1.jpg" class="img-responsive" style="width:100%" alt="Get FoCo">
+            </div>
+
+            <div class="col-sm-4">
+              <p>Get FoCo is Fort Collins first...</p>
+              <img src="images/uRack1.jpg" class="img-responsive" style="width:100%" alt="Get FoCo">
+            </div>
+
           </div>
       </div>
-
+      <!-- Third Container-->
       <div id="contact">
-          <h1>Contact</h1> 
-          <img src="images/uRack1.jpg" alt="uRack">
-          <div class="wordblock">
-              <p style="margin-top:0;"><b></b></p>
+          <div class="container-fluid bg-3 text-center">
+            <h3>Contact Me</h3>
+            <a href="#" class="btn btn-default btn-lg">
+              <span class="glyphicon glyphicon-envelope"></span> Email
+            </a>
           </div>
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <footer class="container-fluid bg-4 text-center">
+      <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a> and Modified by Andrew</p>
+    </footer>
    </body>
 </html>
