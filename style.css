@@ -1,10 +1,12 @@
 body {
-  font: 20px "segoi", sans-serif;
+  font: 20px "Open Sans", sans-serif;
   line-height: 1.8;
+  font-weight: 500;
   color: #f5f6f7;
 }
 
 p {font-size: 16px;}
+
 .bg-1 {
   background-color: #1abc9c; /* Green */
   color: #ffffff;
@@ -42,3 +44,5 @@ p {font-size: 16px;}
 .navbar-nav li a:hover {
   color: #1abc9c !important;
 }
+
+.margin {margin-bottom: 45px;}
