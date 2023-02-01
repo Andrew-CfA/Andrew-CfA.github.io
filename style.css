@@ -26,6 +26,11 @@ p {font-size: 16px;}
   color: #ffffff;
 }
 
+.bg-5 {
+  background-color: lightgray; /* blue */
+  color: 555555;
+}
+
 .container-fluid {
   padding-top: 70px;
   padding-bottom: 70px;
