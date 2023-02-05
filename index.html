@@ -149,8 +149,13 @@
    </body>
 
  
+   <!--
+    Script: ColorThief
+    Purpose: Takes "overall" color of an image and uses that color as the background color for that selected project in the carousel in "Projects" section
+    Variables: ElementById('GetFoCo') - for now, hardcoded the image chosen to be used by the function colorThief
+    Future Work: Get it to work via getClassById("item active") and the first image it sees, this will allow for live updating of background
+     -->
   <script>
-  
   const colorThief = new ColorThief();
   const img = document.getElementById('GetFoCo'); 
   img.crossOrigin = "Anonymous";
