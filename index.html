@@ -177,9 +177,9 @@
   //color = "rgb(" + r +"," + g +"," + b +")";
 
   //document.getElementById("projectsBackgroundColor").style.backgroundColor = "rgb(21,69,124)";
-  r = colorThief.getColor(img)[0];
-  g = colorThief.getColor(img)[1];
-  b = colorThief.getColor(img)[2];
+  r = colorThief[0].getColor(img);
+  g = colorThief[1].getColor(img);
+  b = colorThief[2].getColor(img);
   color = "rgb(" + r +"," + g +"," + b +")";
 
   document.getElementById("projectsBackgroundColor").style.backgroundColor = color;
