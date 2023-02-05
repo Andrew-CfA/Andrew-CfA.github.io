@@ -153,7 +153,6 @@
   
   const colorThief = new ColorThief();
   const img = document.getElementById('GetFoCo'); 
-  projectsBackgroundColor = document.getElementById("projectsBackgroundColor");
   img.crossOrigin = "Anonymous";
 
   // Make sure image is finished loading
@@ -165,7 +164,7 @@
       console.log(colorThief.getColor(img));
     });
   }
-  projectsBackgroundColor.style.backgroundColor = colorThief.getColor(img);
+  document.getElementById("projectsBackgroundColor").style.backgroundColor = colorThief.getColor(img);
 
 
   /*
