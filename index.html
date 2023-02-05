@@ -55,7 +55,7 @@
 
       <!-- Second Container-->
       <div id="projects">
-          <div class="container-fluid bg-3 text-center">
+          <div class="container-fluid text-center" id="projectsBackgroundColor">
             <div class="row">
               <div class="col-md-8">
                 <!--carousel-->
@@ -150,6 +150,7 @@
 <script>
   const colorThief = new ColorThief();
   const img = document.getElementsByClassName('img.item active'); 
+  const projectsBackgroundColor = document.getElementById("projectsBackgroundColor")
   img.crossOrigin = "Anonymous";
 
   // Make sure image is finished loading
@@ -159,6 +160,8 @@
     img.addEventListener('load', function() {
       colorThief.getColor(img);
       console.log(colorThief.getColor(img));
+      //update projectsBackgroundColor
+      projectsBackgroundColor.style.backgroundColor = colorThief.getColor(img);
     });
   }
 </script>
