@@ -12,7 +12,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
    </head>
    <body>
     <div id="background">
@@ -148,4 +148,20 @@
     </footer>
    </body>
 </html>
+
+
+<script src="node_modules/colorthief/dist/color-thief.umd.js"></script>
+<script>
+    const colorThief = new ColorThief();
+    const img = document.querySelector('img');
+
+    // Make sure image is finished loading
+    if (img.complete) {
+      colorThief.getColor(img);
+    } else {
+      image.addEventListener('load', function() {
+        colorThief.getColor(img);
+      });
+    }
+</script>
 
