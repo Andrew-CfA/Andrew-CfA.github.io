@@ -154,6 +154,7 @@
   const colorThief = new ColorThief();
   const img = document.getElementById('GetFoCo'); 
   const testArray =[21, 69, 124];
+  
   img.crossOrigin = "Anonymous";
 
   // Make sure image is finished loading
@@ -165,19 +166,23 @@
       console.log(colorThief.getColor(img));
     });
   }
-  for (let i=0; i<3; i++)
-  {
-    r = colorThief.getColor(img)[0];
-    g = colorThief.getColor(img)[1];
-    b = colorThief.getColor(img)[2];
-  }
+  
 
-  console.log(r);
-  console.log(g);
-  console.log(b);
-  document.getElementById("projectsBackgroundColor").style.backgroundColor = rgb(r,g,b);
+  //document.getElementById("projectsBackgroundColor").style.backgroundColor = rgb(colorThief.getColor(img)[0], colorThief.getColor(img)[1], colorThief.getColor(img)[2],);
  
-  //document.getElementById("projectsBackgroundColor").style.backgroundColor = "red";
+  //r = testArray[0];
+  //g = testArray[1];
+  //b = testArray[2];
+
+  //color = "rgb(" + r +"," + g +"," + b +")";
+
+  //document.getElementById("projectsBackgroundColor").style.backgroundColor = "rgb(21,69,124)";
+  r = colorThief.getColor(img)[0];
+  g = colorThief.getColor(img)[1];
+  b = colorThief.getColor(img)[2];
+  color = "rgb(" + r +"," + g +"," + b +")";
+
+  document.getElementById("projectsBackgroundColor").style.backgroundColor = color;
 
   </script>
 
