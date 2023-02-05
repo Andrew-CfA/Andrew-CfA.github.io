@@ -1,11 +1,17 @@
+*{
+  font-family: "Open Sans";
+}
+
 body {
-  font: 20px "Open Sans", sans-serif;
+  font-family:"Open Sans", sans-serif;
   line-height: 1.8;
   font-weight: 500;
   color: #f5f6f7;
 }
 
-p {font-size: 16px;}
+p {
+  font-size: 16px;
+}
 
 .bg-1 {
   background-color: #1abc9c; /* Green */
@@ -29,6 +35,12 @@ p {font-size: 16px;}
 .bg-5 {
   background-color: lightgray; /* blue */
   color: 555555;
+}
+
+.bg-6 {
+  background: -webkit-radial-gradient(#205983, #0A2742);
+  background: radial-gradient(#205983, #0A2742);
+  color: #ffffff;
 }
 
 .container-fluid {
