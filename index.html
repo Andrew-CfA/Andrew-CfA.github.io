@@ -150,7 +150,7 @@
 <script>
   const colorThief = new ColorThief();
   const img = document.getElementsByClassName('img.item active'); 
-  const projectsBackgroundColor = document.getElementById("projectsBackgroundColor")
+  const projectsBackgroundColor = document.getElementById("projectsBackgroundColor");
   img.crossOrigin = "Anonymous";
 
   // Make sure image is finished loading
@@ -162,9 +162,7 @@
       console.log(colorThief.getColor(img));
     });
   }
-
   projectsBackgroundColor.style.backgroundColor = colorThief.getColor(img);
-
 </script>
   
 </html>
