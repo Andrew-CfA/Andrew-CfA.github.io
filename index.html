@@ -160,10 +160,11 @@
     img.addEventListener('load', function() {
       colorThief.getColor(img);
       console.log(colorThief.getColor(img));
-      //update projectsBackgroundColor
-      projectsBackgroundColor.style.backgroundColor = colorThief.getColor(img);
     });
   }
+
+  projectsBackgroundColor.style.backgroundColor = colorThief.getColor(img);
+
 </script>
   
 </html>
