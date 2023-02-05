@@ -162,7 +162,7 @@
     colorThief.getColor(img);
   } else {
     img.addEventListener('load', function() {
-      colorValue = colorThief.getColor(img);
+      colorThief.getColor(img);
     });
   }
   
@@ -175,7 +175,7 @@
   //color = "rgb(" + r +"," + g +"," + b +")";
 
   //document.getElementById("projectsBackgroundColor").style.backgroundColor = "rgb(21,69,124)";
-
+  colorValue = colorThief.getColor(img);
   r = colorValue[0];
   g = colorValue[1];
   b = colorValue[2];
