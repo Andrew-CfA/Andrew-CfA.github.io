@@ -55,7 +55,7 @@
 
       <!-- Second Container-->
       <div id="projects">
-          <div class="container-fluid text-center" id="projectsBackgroundColor">
+          <div class="container-fluid text-center" id="projectsBackgroundColor"> <!--style="background-color: rgb(21,69,124);"" -->
             <div class="row">
               <div class="col-md-8">
                 <!--carousel-->
@@ -153,6 +153,7 @@
   
   const colorThief = new ColorThief();
   const img = document.getElementById('GetFoCo'); 
+  const testArray =[21, 69, 124];
   img.crossOrigin = "Anonymous";
 
   // Make sure image is finished loading
@@ -164,23 +165,16 @@
       console.log(colorThief.getColor(img));
     });
   }
-  document.getElementById("projectsBackgroundColor").style.backgroundColor = colorThief.getColor(img);
+  for (let i=0; i<3; i++)
+  {
+    r = colorThief.getColor(img)[0];
+    g = colorThief.getColor(img)[1];
+    b = colorThief.getColor(img)[2];
+  }
+  document.getElementById("projectsBackgroundColor").style.backgroundColor = rgb(colorThief.getColor(img));
+ 
   //document.getElementById("projectsBackgroundColor").style.backgroundColor = "red";
 
-
-  /*
-    const colorThief = new ColorThief();
-    const img = document.getElementById('Andrew');
-
-    // Make sure image is finished loading
-    if (img.complete) {
-      colorThief.getColor(img);
-    } else {
-      img.addEventListener('load', function() {
-        colorThief.getColor(img);
-      });
-    }
-    */
   </script>
 
   
