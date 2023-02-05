@@ -67,7 +67,7 @@
                   </ol>
                   <div class="carousel-inner">
                     <div class="item active">
-                      <img src="images/GetFoCo.png"  id="GetFoCo" class="img-responsive" style="width:100%" alt="Get FoCo" >
+                      <img src="images/GetFoCo.png"  id="takeThisImageColor" class="img-responsive" style="width:100%" alt="Get FoCo" >
                     </div>
                     <div class="item">
                       <img src="images/GetFoCo-Dashboard.png" class="img-responsive" style="width:100%" alt="Get FoCo Dashboard">
@@ -147,39 +147,7 @@
       <p>Bootstrap theme made by Andrew</p>
     </footer>
    </body>
-
- 
-   <!--
-    Script: ColorThief
-    Purpose: Takes "overall" color of an image and uses that color as the background color for that selected project in the carousel in "Projects" section
-    Variables: ElementById('GetFoCo') - for now, hardcoded the image chosen to be used by the function colorThief
-    Future Work: Get it to work via getClassById("item active") and the first image it sees, this will allow for live updating of background
-     -->
-  <script>
-  const colorThief = new ColorThief();
-  const img = document.getElementById('GetFoCo'); 
-  img.crossOrigin = "Anonymous";
-
-  // Make sure image is finished loading
-  if (img.complete) {
-    colorThief.getColor(img);
-  } else {
-    img.addEventListener('load', function() {
-      colorThief.getColor(img);
-      colorValue = colorThief.getColor(img);
-      r = colorValue[0];
-      g = colorValue[1];
-      b = colorValue[2];
-      color = "rgb(" + r +"," + g +"," + b +")";
-
-      document.getElementById("projectsBackgroundColor").style.backgroundColor = color;
-    });
-  }
-  
-
-
-  </script>
-
+  <script src ="scripts.js"></script>
   
 </html>
 
