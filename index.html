@@ -162,12 +162,10 @@
     colorThief.getColor(img);
   } else {
     img.addEventListener('load', function() {
-      colorThief.getColor(img);
-      console.log(colorThief.getColor(img));
+      const colorValue = colorThief.getColor(img);
     });
   }
   
-
   //document.getElementById("projectsBackgroundColor").style.backgroundColor = rgb(colorThief.getColor(img)[0], colorThief.getColor(img)[1], colorThief.getColor(img)[2],);
  
   //r = testArray[0];
@@ -177,9 +175,10 @@
   //color = "rgb(" + r +"," + g +"," + b +")";
 
   //document.getElementById("projectsBackgroundColor").style.backgroundColor = "rgb(21,69,124)";
-  r = colorThief[0].getColor(img);
-  g = colorThief[1].getColor(img);
-  b = colorThief[2].getColor(img);
+
+  r = colorValue[0];
+  g = colorValue[1];
+  b = colorValue[2];
   color = "rgb(" + r +"," + g +"," + b +")";
 
   document.getElementById("projectsBackgroundColor").style.backgroundColor = color;
