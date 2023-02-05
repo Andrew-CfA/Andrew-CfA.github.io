@@ -147,9 +147,12 @@
       <p>Bootstrap theme made by Andrew</p>
     </footer>
    </body>
-<script>
+
+ 
+  <script>
+  
   const colorThief = new ColorThief();
-  const img = document.getElementsByClassName('img.item active'); 
+  const img = document.getElementById('img.item active'); 
   const projectsBackgroundColor = document.getElementById("projectsBackgroundColor");
   img.crossOrigin = "Anonymous";
 
@@ -160,10 +163,26 @@
     img.addEventListener('load', function() {
       colorThief.getColor(img);
       console.log(colorThief.getColor(img));
-    })
+    });
   }
   projectsBackgroundColor.style.backgroundColor = colorThief.getColor(img);
-</script>
+
+
+  /*
+    const colorThief = new ColorThief();
+    const img = document.getElementById('Andrew');
+
+    // Make sure image is finished loading
+    if (img.complete) {
+      colorThief.getColor(img);
+    } else {
+      img.addEventListener('load', function() {
+        colorThief.getColor(img);
+      });
+    }
+    */
+  </script>
+
   
 </html>
 
