@@ -1,5 +1,14 @@
+:root {
+  --darkblue: #13467D;
+  --lightblue: #55A1D3;
+  --orange: #F27B1F;
+  --yellow: #F9B316;
+  --gray: #999999;
+  --burntsienna: #e74c3c;
+}
 * {
   font-family: "Open Sans";
+
 }
 body {
   line-height: 1.8;
