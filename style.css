@@ -70,6 +70,7 @@ h3 {
   overflow:hidden;
   position: relative;
   padding-bottom: 5px;
+  height:27px;
 }
 span1 {
   display: inline-block;
@@ -85,8 +86,8 @@ span1 {
 
 @keyframes move {
 0%  { top: 0px; }
-20% { top: 50px; }
-40% { top: 100px; }
-60% { top: 150px; }
-80% { top: 200px; }
+20% { top: -27px; }
+40% { top: -54px; }
+60% { top: -81px; }
+80% { top: -108px; }
 }
