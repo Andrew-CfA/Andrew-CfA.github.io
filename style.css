@@ -69,11 +69,13 @@ p {
 h3 {
   overflow:hidden;
   position: relative;
-  height:27px;
+  height:30px;
+  color: #e74c3c;
 }
 span1 {
+  display: inline-block;
   position: relative;
-  color: #e74c3c;
+  white-space: nowrap;
   top: 0;
   left: 0;
   -webkit-animation: move 7s;
