@@ -11,6 +11,14 @@ p {
   font-size: 16px;
 }
 
+.right{
+  float:right;
+}
+
+.left{
+  float:left;
+}
+
 
 .bg-1 {
   background-color: #1abc9c; /* Green */
