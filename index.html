@@ -24,12 +24,9 @@
       <!--CDN for ColorThief-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
 
-      <!--Animate on Scroll Library-->
+      <!--Animate on Scroll-->
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
 
    </head>
 
@@ -76,8 +73,7 @@
       </div>
 
       <!-- Second Container-->
-      <div id="projects" data-aos="fade-up">
-        Projects
+      <div id="projects">
           <div class="container-fluid text-justify" id="projectsBackgroundColor">
             <div class="row">
               <div class="col-md-8">
@@ -111,14 +107,16 @@
 
 
               <div class="col-sm-4">
-                <div class="well" style="background-color: white; border: none; text-align: left;">
-                  <p style="border-bottom: 1px solid grey; padding-bottom: 3%;">Quick Facts</p>
-                  <p>Client: <a href="https://www.fcgov.com/">City of Fort Collins</a></p>
-                  <p>URL: <a href="https://getfoco.fcgov.com/">https://getfoco.fcgov.com/</a></p>
-                  <p>GitHub: <a href="https://github.com/Get-Your/GetFoco">https://github.com/Get-Your/GetFoco</a></p>
-                  <p>Category: Web App (SAAS)</p>
-                  <p>Tech: Django Backend; JavaScript Frontend; GitHub; Azure Hosting; Docker Containers; Twilio SMS; Google Analytics;
-                  </p>
+                <div data-aos="fade-left">
+                  <div class="well" style="background-color: white; border: none; text-align: left;">
+                    <p style="border-bottom: 1px solid grey; padding-bottom: 3%;">Quick Facts</p>
+                    <p>Client: <a href="https://www.fcgov.com/">City of Fort Collins</a></p>
+                    <p>URL: <a href="https://getfoco.fcgov.com/">https://getfoco.fcgov.com/</a></p>
+                    <p>GitHub: <a href="https://github.com/Get-Your/GetFoco">https://github.com/Get-Your/GetFoco</a></p>
+                    <p>Category: Web App (SAAS)</p>
+                    <p>Tech: Django Backend; JavaScript Frontend; GitHub; Azure Hosting; Docker Containers; Twilio SMS; Google Analytics;
+                    </p>
+                  </div>
                 </div>
 
               </div>
@@ -167,6 +165,9 @@
     </footer>
    </body>
   <script src ="scripts.js"></script>
+  <script>
+    AOS.init();
+  </script>
   
 </html>
 
