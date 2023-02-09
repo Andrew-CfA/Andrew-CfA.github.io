@@ -11,6 +11,7 @@ p {
   font-size: 16px;
 }
 
+
 .bg-1 {
   background-color: #1abc9c; /* Green */
   color: #ffffff;
@@ -64,6 +65,12 @@ p {
 
 
 /* About me text animation */
+
+h3 {
+  overflow:hidden;
+  position: relative;
+  padding-bottom: 5px;
+}
 span1 {
   display: inline-block;
   color: #e74c3c;
@@ -78,8 +85,8 @@ span1 {
 
 @keyframes move {
 0%  { top: 0px; }
-20% { top: -50px; }
-40% { top: -100px; }
-60% { top: -150px; }
-80% { top: -200px; }
+20% { top: 50px; }
+40% { top: 100px; }
+60% { top: 150px; }
+80% { top: 200px; }
 }
