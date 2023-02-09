@@ -31,7 +31,7 @@ p {
 }
 
 .bg-5 {
-  background-color: lightgray; /* blue */
+  background-color: #ffffff; /* blue */
   color: #555555;
 }
 
@@ -61,3 +61,25 @@ p {
 }
 
 .margin {margin-bottom: 45px;}
+
+
+/* About me text animation */
+.span1 {
+  display: inline-block;
+  color: #e74c3c;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+  -webkit-animation: move 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+}
+
+@keyframes move {
+0%  { top: 0px; }
+20% { top: -50px; }
+40% { top: -100px; }
+60% { top: -150px; }
+80% { top: -200px; }
+}
