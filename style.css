@@ -62,7 +62,7 @@ p {
 
 /* About me text animation */
 
-h3 {
+.textScrollAnimation {
   overflow:hidden;
   position: relative;
   height:28px;
