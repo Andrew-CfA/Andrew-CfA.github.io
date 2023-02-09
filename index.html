@@ -7,10 +7,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <!-- My own style sheet -->
       <link rel="stylesheet" type="text/css" href="style.css" /> 
-      <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-      <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
 
       <!--boot strap style sheet -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -27,6 +23,14 @@
 
       <!--CDN for ColorThief-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+
+      <!--Animate on Scroll Library-->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
    </head>
 
    <body>
@@ -72,7 +76,8 @@
       </div>
 
       <!-- Second Container-->
-      <div id="projects">
+      <div id="projects" data-aos="fade-up">
+        Projects
           <div class="container-fluid text-justify" id="projectsBackgroundColor">
             <div class="row">
               <div class="col-md-8">
