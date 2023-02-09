@@ -70,9 +70,9 @@ h3 {
   overflow:hidden;
   position: relative;
   height:30px;
-  color: #e74c3c;
 }
 span1 {
+  color: #e74c3c;
   display: inline-block;
   position: relative;
   white-space: nowrap;
