@@ -23,3 +23,15 @@ if (img.complete) {
     document.getElementById("projectsBackgroundColor").style.backgroundColor = color;
   });
 }
+
+
+
+/*
+Script: Div hider for "Experience" section
+Purpose: When a tab is clicked, it shows that experience and makes sure that other tabs are not shown / are hidden
+*/
+
+$(".experienceTab.collapse").on('shown.bs.collapse', function () {    
+  //when a collapsed div is shown hide all other collapsible divs that are visible
+         $(".experienceTab.collapse").not($(this)).collapse('hide');
+  });
