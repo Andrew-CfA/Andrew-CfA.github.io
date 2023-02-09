@@ -31,11 +31,6 @@ p {
   color: #ffffff;
 }
 
-.bg-5 {
-  background-color: #ffffff; /* blue */
-  color: #555555;
-}
-
 .bg-6 {
   background: -webkit-radial-gradient(#205983, #0A2742);
   background: radial-gradient(#205983, #0A2742);
@@ -85,8 +80,8 @@ span1 {
 
 @keyframes move {
 0%  { top: 0px; }
-20% { top: -28px; }
-40% { top: -56px; }
-60% { top: -84px; }
-80% { top: -112px; }
+20% { top: -27px; }
+40% { top: -54px; }
+60% { top: -81px; }
+80% { top: -110px; }
 }
