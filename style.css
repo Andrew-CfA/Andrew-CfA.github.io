@@ -69,17 +69,14 @@ p {
 h3 {
   overflow:hidden;
   position: relative;
-  padding-bottom: 5px;
   height:27px;
 }
 span1 {
-  display: inline-block;
-  color: #e74c3c;
   position: relative;
-  white-space: nowrap;
+  color: #e74c3c;
   top: 0;
   left: 0;
-  -webkit-animation: move 5s;
+  -webkit-animation: move 7s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-delay: 1s;
 }
