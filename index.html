@@ -15,6 +15,7 @@
 
       <!--jquery-->
       <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       
       <!--Font-->
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -290,17 +291,5 @@
   <script>
     AOS.init();
   </script>
-  <script>
-    /*
-    Script: Div hider for "Experience" section
-    Purpose: When a tab is clicked, it shows that experience and makes sure that other tabs are not shown / are hidden
-    */
-
-    $(".experienceTab.collapse").on('shown.bs.collapse', function () {    
-      //when a collapsed div is shown hide all other collapsible divs that are visible
-            $(".experienceTab.collapse").not($(this)).collapse('hide');
-      });
-  </script>
-  
 </html>
 
