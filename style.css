@@ -92,7 +92,7 @@ p {
   font-weight: lighter;
 }
 span1 {
-  color: #e74c3c;
+  color: var(--burntsienna);
   display: inline-block;
   /*position: relative;*/
   white-space: nowrap;
