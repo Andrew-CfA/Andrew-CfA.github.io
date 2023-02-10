@@ -87,14 +87,14 @@ p {
 
 .textScrollAnimation {
   overflow:hidden;
-  /*position: relative;*/
+  position: relative;
   height:28px;
   font-weight: lighter;
 }
 span1 {
   color: var(--burntsienna);
   display: inline-block;
-  /*position: relative;*/
+  position: relative;
   white-space: nowrap;
   top: 0;
   left: 0;
