@@ -13,9 +13,6 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-      <!--jquery-->
-      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-      
       <!--Font-->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,14 +39,15 @@
             </button>
             <a class="navbar-brand" href="#">Me</a>
           </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
 
@@ -59,7 +57,7 @@
           <img id="Andrew" src="images/Andrew.png" class="img-responsive img-circle" style="display:inline; width: 30%;" alt="Andrew">
           <div style="display: flex; justify-content: center; padding: 50px;"> 
             <h3> <b>Andrew Gagnez :</b></h3>
-            <h3> 
+            <h3 class="textScrollAnimation"> 
               <span1>
                 avid hardware enthusiast <br />
                 a Civic Tech hacktivist  <br />
@@ -69,68 +67,192 @@
               </span1>
             </h3>
           </div>
+          <h4>
+            Hey there! My main focus is civic tech and creating 
+            digital services for those in need! I have worked with <a href="https://blogs.microsoft.com/bayarea/2016/04/07/spartan-hacks-takes-on-san-joses-key-civic-issues/">Microsoft as a Civic Tech Fellow</a>, 
+            the Mayor's Office of San Jose and most recently, Code For America <a href="https://codeforamerica.org/news/meet-the-community-fellows-team-fort-collins/">as a software engineer</a> 
+            helping Fort Collins' under-served residents <a href="https://getfoco.fcgov.com/"> get the services they need</a>, in all of those roles I made sure I did one thing, use my skills to help create change.
+          </h4>
         </div>
       </div>
 
+
       <!-- Second Container-->
-      <div data-aos="fade-up"id="projects">
-          <div class="container-fluid text-justify" id="projectsBackgroundColor">
-            <div class="row">
-              <div class="col-md-8">
-                <!--carousel-->
-                <div data-aos="fade-right" id="projectsCarousel" class="carousel slide" data-ride="carousel">
-                  <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                    <li data-target="#projectsCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#projectsCarousel" data-slide-to="1"></li>
-                  </ol>
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <img src="images/GetFoCo.png"  id="takeThisImageColor" class="img-responsive" style="width:100%" alt="Get FoCo" >
-                    </div>
-                    <div class="item">
-                      <img src="images/GetFoCo-Dashboard.png" class="img-responsive" style="width:100%" alt="Get FoCo Dashboard">
-                    </div>
+      <div id="experience">
+        <div class="container-fluid bg-4">
+          
+          <ul data-aos="fade-up" class="nav nav-tabs nav-justified">
+            <li role="presentation"><a href="#CfA" data-toggle="collapse" style="color:var(--burntsienna)">Code for America</a></li>
+            <li role="presentation"><a href="#CiF" data-toggle="collapse" style="color:var(--burntsienna)">Coding it Forward</a></li>
+            <li role="presentation"><a href="#SJ" data-toggle="collapse" style="color:var(--burntsienna)">Mayor's office San Jose</a></li>
+            <li role="presentation"><a href="#MS" data-toggle="collapse" style="color:var(--burntsienna)">Microsoft</a></li>
+          </ul>
+
+          <div id="default" class="experienceTab collapse in" style="margin:5%;">
+            <div class="text-center" data-aos="fade-up"><h3>Click on the tabs above to see some of my experience!</h3></div>
+          </div>
+          
+          <div id="CfA" class="experienceTab collapse" style="margin:5%">
+            <h3> Community Fellow Software Engineer (Full Stack) - Code for America</h3>
+            <h4> October 2020 - October 2022</h4> 
+            <h4>
+              <ul>
+                <li>Full stack software developer for ARPA funded web app service for our partner, 
+                  the City of Fort Collins, that has made income-qualified programs more accessible 
+                  to the residents of the city with 500+ residents already serviced
+                </li>
+                <li>Utilized JavaScript, HTML, Python (via Django framework) and user-centered design 
+                  to create the frontend and backend of the website to ensure a clean, responsive UI 
+                  and devOps (via GitHub, Docker & Azure) designed to help disenfranchised residents 
+                  of Fort Collins
+                </li>
+                <li>Applied Microsoft Azure and Postgres to handle the database for our system to log 
+                  financial information for residents and by utilized algorithms and various API’s like 
+                  the USPS API, Twilio and Sendgrid to automate the sign-up and verification process 
+                  and make it as fast, efficient and user friendly as possible
+                </li>
+                <li>
+                  Worked fully remote and presented in city council meetings to discuss the potential 
+                  of Get FoCo as well as drafting a Statement of Work with Fort Collins requests in mind 
+                  to further  iterate and continue Get FoCo’s evolution
+                </li>
+                <li>
+                  Worked closely with CfA UX / UI designers and PM alongside City of Fort Collins stakeholders 
+                  to ensure Get FoCo met human centered design needs as well as meeting the needs of Fort Collins 
+                  city government such as ADA compliance, proper city branding, and most importantly friendly, 
+                  approachable language
+                </li>
+              </ul>
+            </h4>   
+          </div>
+
+          <div id="CiF" class="experienceTab collapse" style="margin: 5%;">
+            <h3> Civic Tech Teaching Facilitator - Coding it Forward</h3>
+              <h4> June 2022 - August 2022</h4> 
+              <h4>
+                <ul>
+                  <li>
+                    Remotely taught and supported  a mixture of 20 undergrad and graduate students across the U.S.  
+                    exploring career opportunities in civic tech such as Kentucky, Missouri, California and even the CDC
+                  </li>
+                  <li>
+                    Facilitated eight, one hour teaching sessions over the course of three months for these civic tech 
+                    fellows where I discussed civic tech as a whole, gave advice traversing the political landscape, 
+                    building professional government relationships as well as talking shop and supporting them with tech 
+                    advice for their projects.
+                  </li>
+                    Lead weekly 1:1 conversations with each member to coach and advise them on their civic tech projects, 
+                    check in on their well-being and provided them with workplace development tools
+                </ul>
+              </h4>   
+          </div>
+
+          <div id="SJ" class="experienceTab collapse" style="margin:5%;">
+            <h3> Intern - Mayor's Office of San Jose</h3>
+              <h4> July 2016 - September 2016</h4> 
+              <h4>
+                <ul>
+                  <li>
+                    Helped facilitate meetings between the City of San Jose and corporate entities such as Adobe and Microsoft
+                  </li>
+                  <li>
+                    Organizer for Mayor’s smart city challenge – “Unleash Your Geek: Graffiti Removal” – a competition designed
+                     for activating San Jose’s hacker community to fix the city’s graffiti problem through hardware / software means 
+                  </li>
+                    Lead weekly 1:1 conversations with each member to coach and advise them on their civic tech projects, 
+                    check in on their well-being and provided them with workplace development tools
+                </ul>
+              </h4>   
+          </div>
+        
+
+          <div id="MS" class="experienceTab collapse" style="margin: 5%;">
+            <h3> Technology and Civic Engagement Fellow - Microsoft</h3>
+              <h4> July 2016 - July 2017</h4> 
+              <h4>
+                <ul>
+                  <li>
+                    Recruited and led 12 SJSU industrial and software engineers and design students in scrum meetings as well as 
+                    leading discussions in marketing, design and budgeting a 100+ participant, civic tech-based hackathon at SJSU
+                  </li>
+                  <li>
+                    Mediated between San Jose State University, Microsoft and City Government of San Jose resulting in successful 
+                    three-way sponsorship with key speakers, Microsoft’s Director of Global Citizenship and San Jose’s CIO as 
+                    well as acquiring judges from across the industry like Intel, Microsoft and TechShop 
+                  </li>
+                  <li>
+                    Solved a metrics tracking issue for our partner Code for San Jose, by developing a Raspberry Pi login system through 
+                    Python and Ubuntu (Linux) that upheld a CSV database of civic hackers and interfaced with a label printer for custom
+                    nametags and personalized QR code functionality
+                  </li>
+                  <li>
+                    Explained and demonstrated Internet of Things technology like Arduino and Raspberry Pi  to civic tech hackers at various
+                     locations such as meetups group Code for San Jose and to elementary school students at various schools around the 
+                     San Jose area with the goal to inspire them to use more hardware based projects for civic good
+                  </li>
+                </ul>
+              </h4>   
+          </div>
+        </div>
+      </div>
+      <!-- Third Container-->
+      <div id="projects" data-aos="fade-up">
+        <div class="container-fluid text-justify" id="projectsBackgroundColor">
+          <div class="row">
+            <div class="col-md-8">
+              <!--carousel-->
+              <div data-aos="fade-right" id="projectsCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#projectsCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#projectsCarousel" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="images/GetFoCo.png"  id="takeThisImageColor" class="img-responsive" style="width:100%" alt="Get FoCo" >
                   </div>
-                  <!-- Left and right controls -->
-                  <a class="left carousel-control" href="#projectsCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control" href="#projectsCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
+                  <div class="item">
+                    <img src="images/GetFoCo-Dashboard.png" class="img-responsive" style="width:100%" alt="Get FoCo Dashboard">
+                  </div>
                 </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#projectsCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#projectsCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
+            </div>
 
 
-              <div class="col-sm-4">
-                <div data-aos="fade-left"  class="well" style="background-color: white; border: none; text-align: left;">
-                  <p style="border-bottom: 1px solid grey; padding-bottom: 3%;">Quick Facts</p>
-                  <p>Client: <a href="https://www.fcgov.com/">City of Fort Collins</a></p>
-                  <p>URL: <a href="https://getfoco.fcgov.com/">https://getfoco.fcgov.com/</a></p>
-                  <p>GitHub: <a href="https://github.com/Get-Your/GetFoco">https://github.com/Get-Your/GetFoco</a></p>
-                  <p>Category: Web App (SAAS)</p>
-                  <p>Tech: Django Backend; JavaScript Frontend; GitHub; Azure Hosting; Docker Containers; Twilio SMS; Google Analytics;
-                  </p>
-                </div>
+            <div class="col-sm-4">
+              <div data-aos="fade-up"  class="well" style="background-color: white; border: none; text-align: left;">
+                <p style="border-bottom: 1px solid grey; padding-bottom: 3%;">Quick Facts</p>
+                <p>Client: <a href="https://www.fcgov.com/">City of Fort Collins</a></p>
+                <p>URL: <a href="https://getfoco.fcgov.com/">https://getfoco.fcgov.com/</a></p>
+                <p>GitHub: <a href="https://github.com/Get-Your/GetFoco">https://github.com/Get-Your/GetFoco</a></p>
+                <p>Category: Web App (SAAS)</p>
+                <p>Tech: Django Backend; JavaScript Frontend; GitHub; Azure Hosting; Docker Containers; Twilio SMS; Google Analytics;
+                </p>
               </div>
+            </div>
 
-              <div class="col-sm-4">
-                <div data-aos="fade-left"  class="well" style="background-color: white; border: none; text-align: left;">
-                  <p>Get FoCo is Fort Collins' first income-qualified programs web-app SAAS designed to help its residents in need!</p>
-                  <p>This project was born out of the frustrations and anxieties that I lived through during 2020 - 2021, with the world reeling in from Covid, it was obvious that government services needed updating. Get FoCo was designed to treat its clients not as a statistic, but as people.</p>
-                </div>
+            <div class="col-sm-4">
+              <div data-aos="fade-up"  class="well" style="background-color: white; border: none; text-align: left;">
+                <p>Get FoCo is Fort Collins' first income-qualified programs web-app SAAS designed to help its residents in need!</p>
+                <p>This project was born out of the frustrations and anxieties that I lived through during 2020 - 2021, with the world reeling in from Covid, it was obvious that government services needed updating. Get FoCo was designed to treat its clients not as a statistic, but as people.</p>
               </div>
-
-
             </div>
           </div>
+        </div>
       </div>
 
-      <!-- Third Container-->
-      <div data-aos="fade-up" id="contact">
+
+      <!-- Fourth Container-->
+      <div id="contact" data-aos="fade-up" >
         <div class="container-fluid bg-3 text-center">
           <div style="padding-bottom: 50px;">
             <h3>Say Hi!</h3>
@@ -159,10 +281,10 @@
       <p>Bootstrap theme made by Andrew</p>
     </footer>
    </body>
+
   <script src ="scripts.js"></script>
   <script>
     AOS.init();
   </script>
-  
 </html>
 
