@@ -26,15 +26,6 @@ p {
   font-size: 16px;
 }
 
-.right{
-  float:right;
-}
-
-.left{
-  float:left;
-}
-
-
 .bg-1 {
   background-color: #1abc9c; /* Green */
   color: #ffffff;
@@ -63,6 +54,11 @@ p {
 .container-fluid {
   padding-top: 70px;
   padding-bottom: 70px;
+}
+
+.container-fluid2 { /* to be used as buffer between sections of the website*/
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .navbar {
