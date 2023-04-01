@@ -9,17 +9,42 @@
 
 * {
   font-family: "Open Sans";
-  /* DEBUGGING CSS BELOW! GREAT CODE 
+  /* DEBUGGING CSS BELOW! GREAT CODE */
   background: #000 !important;
   color: #0f0 !important;
   outline: solid #f00 1px !important;
-  */
 }
 
-body {
+body, section {
   line-height: 1.8;
   font-weight: 500;
   color: #f5f6f7;
+  block-size:100%;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+/* Full Screen Vertical Snap */
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-of-type(even) {
+  color: white;
+  background: black;
+}
+
+section:nth-of-type(odd) {
+  color: black;
+  background: white;
 }
 
 p {
