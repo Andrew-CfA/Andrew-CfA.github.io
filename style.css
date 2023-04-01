@@ -31,7 +31,7 @@ html {
 section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,16 +74,6 @@ p {
   background: -webkit-radial-gradient(#205983, #0A2742);
   background: radial-gradient(#205983, #0A2742);
   color: #ffffff;
-}
-
-.container-fluid {
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-
-.container-fluid2 { /* to be used as buffer between sections of the website*/
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .navbar {
