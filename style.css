@@ -50,6 +50,8 @@ section:nth-of-type(odd) {
 .container-fluid {
   height: 100vh;
 }
+
+/* vertical snap done */
 p {
   font-size: 16px;
 }
