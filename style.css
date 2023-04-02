@@ -9,10 +9,10 @@
 
 * {
   font-family: "Open Sans";
-  /* DEBUGGING CSS BELOW! GREAT CODE
+  /* DEBUGGING CSS BELOW! GREAT CODE */
   background: #000 !important;
   color: #0f0 !important;
-  outline: solid #f00 1px !important; */
+  outline: solid #f00 1px !important;
 }
 
 body, section {
@@ -49,6 +49,9 @@ section:nth-of-type(odd) {
 
 .container-fluid {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* vertical snap done */
