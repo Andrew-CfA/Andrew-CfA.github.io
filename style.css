@@ -13,7 +13,6 @@
   background: #000 !important;
   color: #0f0 !important;
   outline: solid #f00 1px !important;*/
-  
 }
 
 body, section {
@@ -83,10 +82,13 @@ p {
   background-color: #2f2f2f; /* blackish */
   color: #ffffff;
 }
+.bg-5 {
+  background: linear-gradient(to right, #2f2f2f 50%, #ffffff 50%);
+  color: #ffffff;
+}
 
 .bg-6 {
-  background: -webkit-radial-gradient(#205983, #0A2742);
-  background: radial-gradient(#205983, #0A2742);
+  background: linear-gradient(to right, #ffffff 50%, #2f2f2f 50% );
   color: #ffffff;
 }
 
@@ -136,6 +138,71 @@ span1 {
 80% { top: -160px; }
 }
 
+
+/* Contact Me Form CSS 
+
+input, textarea, select {
+  background-color : #2f2f2f;
+  color : #000;
+  border: none;
+  border-bottom: 1px solid goldenrod;
+  }
+
+
+input.input-name, input.input-email {
+  width: 200px;
+}
+
+input.input-comment{
+  width: 600px;
+}
+
+form {
+  border: none;
+  }
+
+  */
+
+
+  /*ALL THINGS BELOW ARE FOR INPUTS*/
+  .input{
+    position: relative;
+    padding: 30px 0px;
+    /*need height to be 100%*/
+}
+input{
+    font-size: max(2vw, 14px);
+    padding:5px;
+    font-weight: 700;
+    display:block;
+    border:none;
+    color:var(--darkblue);
+    background-color: #2f2f2f;
+    border-bottom:1px solid white;
+}
+input:focus { outline:none; }
+.labelword{
+    color:var(--darkblue);
+    font-size: max(2vw, 14px);
+}
+.label{
+    /*This pushed the words away*/
+    position:absolute;
+    color:var(--darkblue);
+    font-size:  max(2vw, 14px);
+    left:5px;
+    top:30px;
+    pointer-events: none;
+    transition:0.2s ease-in-out; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+    
+}
+  
+input.fill:focus ~ label, input.fill:valid ~ label {
+    transform:translateY(-30px);
+  }
+/* End Contact Form */
 
 /* overlapping horizontal slideshow */
 
