@@ -100,26 +100,60 @@
 
       <!-- Contact Section  -->
       <section id="about">
-        <div class="container-fluid center-content bg-6 text-center">
+        <div class="container-fluid center-content bg-4 text-center">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-3 col-md-offset-2">
               <div class="well" style="color: black;">
                 <h1>
                   Ready to collaborate? Send me a message - coffee's on me.
                 </h1>
               </div>
             </div>
-            <div class="col-md-offset-2 col-md-3">
+            <div class=" col-md-6">
               <form action="mailto:jonandrew@outlook.com" method="post" enctype="text/plain">
-                Name:<br>
-                <input type="text" name="name"><br>
-                E-mail:<br>
-                <input type="text" name="mail"><br>
-                Comment:<br>
-                <input type="text" name="comment" size="50"><br><br>
-                <input type="submit" value="Send">
-                <input type="reset" value="Reset">
-                </form>
+                <div class="row">
+                  <div class="input col-md-6">
+                    <!--Have styling that I like on the forms-->        
+                    <input class="fill" name="{{ field.name }}"
+                    id="password"
+                    maxlength="{{ field.max_length }}"
+                    type="password" 
+                    style="width:100%;"
+                    required
+                    autocomplete="off">
+                    <label class="label">Name</label>
+                  </div>
+
+                  <div class="input col-md-6">
+                    <!--Have styling that I like on the forms-->        
+                    <input class="fill" name="{{ field.name }}"
+                    id="password"
+                    maxlength="{{ field.max_length }}"
+                    type="password" 
+                    style="width:100%;"
+                    required
+                    autocomplete="off">
+                    <label class="label">Email</label>
+                  </div>
+
+                  <div class="input col-md-12">
+                    <!--Have styling that I like on the forms-->        
+                    <input class="fill" name="{{ field.name }}"
+                    id="password"
+                    maxlength="{{ field.max_length }}"
+                    type="password" 
+                    style="width:100%;"
+                    required
+                    autocomplete="off">
+                    <label class="label">Comment</label>
+                    </div>
+
+                    <br>
+                    <br>
+                    <button type="submit" value="Send">Submit</button>
+                    
+                </div>
+              </form>
             </div>
           </div>
         </div>
