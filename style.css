@@ -13,7 +13,7 @@
   /* DEBUGGING CSS BELOW! GREAT CODE 
   background: #000 !important;
   color: #0f0 !important;
-  outline: solid #f00 1px !important;*/
+  outline: solid #f00 1px !important; */
 }
 
 body, section {
@@ -237,3 +237,46 @@ li.li-project{
   margin-left: -4px;
 }
 /* end horizontal slideshow */
+
+/* Submit Button */
+
+.button-52 {
+  color:var(--blackish);
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: var(--burntsienna);
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+/* End Submit Button
