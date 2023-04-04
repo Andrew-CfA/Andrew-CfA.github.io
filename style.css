@@ -82,11 +82,14 @@ p {
 .bg-project {
   background: linear-gradient(to right, #2f2f2f 60%, var(--burntsienna) 30%);
   color: #ffffff;
+  height:110vh;
 }
 
 .bg-contact {
   background-color: #2f2f2f; /* blackish */
   color: #ffffff;
+  height: 90vh; /* TODO this is how you make one section bleed into another, have the prior vh offset with the next one
+                    i.e. 110vh for project and 90vh for contact*/
 }
 
 .navbar {
@@ -219,7 +222,7 @@ ul.ul-project {
 }
 
 li.li-project{
-  position: -webkit-sticky;
+  
   position: sticky;
   left: 0;
   
