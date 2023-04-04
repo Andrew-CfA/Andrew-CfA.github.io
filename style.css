@@ -281,7 +281,7 @@ li.li-project{
 /* End Submit Button */
 
 
-/* Flower Animation */
+/* Flower Animation 
 
 .container{
   padding-top: 4%;
@@ -319,8 +319,8 @@ li.li-project{
   background: linear-gradient(320deg, #ee0979 0%, #ff6a00 100%);
   }
   .circle{
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     border-radius: 100%;
     background: #ffef00;
     z-index: 100;
