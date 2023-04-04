@@ -3,8 +3,9 @@
   --lightblue: #55A1D3;
   --orange: #F27B1F;
   --yellow: #F9B316;
-  --gray: #999999;
+  --gray: #4e4e4e;
   --burntsienna: #e74c3c;
+  --blackish: #2f2f2f;
 }
 
 * {
@@ -84,7 +85,7 @@ p {
   color: #ffffff;
 }
 .bg-5 {
-  background: linear-gradient(to right, #2f2f2f 50%, #ffffff 50%);
+  background: linear-gradient(to right, #2f2f2f 60%, var(--burntsienna) 30%);
   color: #ffffff;
 }
 
@@ -213,7 +214,7 @@ ul.ul-project {
   padding: 0;
   margin: 0;
   display: block;
-  width: 100%;
+  width: 80%;
   overflow-y: hidden;
   overflow-x: auto;
   white-space: nowrap;
