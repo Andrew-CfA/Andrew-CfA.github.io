@@ -283,19 +283,10 @@ li.li-project{
 
 /* Flower Animation */
 
-*{
-  margin: 0;
-  padding: 0;
-}
-section{
-  min-height: 100vh;
-  background-image: url('background.jpg');
-  background-size: cover;
-}
 .container{
   padding-top: 4%;
 }
-.row{
+.row-flower{
   display: flex;
   align-items: center;
   justify-content: center;
