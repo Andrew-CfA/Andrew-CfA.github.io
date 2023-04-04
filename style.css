@@ -72,7 +72,7 @@ p {
 .bg-about {
   background-color: #2f2f2f; /* blackish */
   color: #ffffff;
-  height: 90vh;
+  height: 95vh;
 }
 .bg-about-2 {
   background: linear-gradient(to right, #2f2f2f 60%, var(--burntsienna) 30%);
