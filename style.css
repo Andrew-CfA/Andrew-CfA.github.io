@@ -10,7 +10,7 @@
 
 * {
   font-family: "Open Sans";
-  /* DEBUGGING CSS BELOW! GREAT CODE 
+  /* DEBUGGING CSS BELOW! GREAT CODE
   background: #000 !important;
   color: #0f0 !important;
   outline: solid #f00 1px !important; */
@@ -72,7 +72,7 @@ p {
 .bg-about {
   background-color: #2f2f2f; /* blackish */
   color: #ffffff;
-  height: 90vh;
+  height: 95vh;
 }
 .bg-about-2 {
   background: linear-gradient(to right, #2f2f2f 60%, var(--burntsienna) 30%);
@@ -212,7 +212,7 @@ ul.ul-project {
   padding: 0;
   margin: 0;
   display: block;
-  width: 50%;
+  width: 100%;
   overflow-y: hidden;
   overflow-x: auto;
   white-space: nowrap;
@@ -278,4 +278,75 @@ li.li-project{
   }
 }
 
-/* End Submit Button
+/* End Submit Button */
+
+
+/* Flower Animation 
+
+.container{
+  padding-top: 4%;
+}
+.row-flower{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box{
+  width: 150px;
+  height: 150px;
+  z-index: 10;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+  animation: 2s scale linear;
+}
+#box1{
+  transform-origin: bottom right;
+  border-radius: 0px 100px 0px 100px;
+  background: linear-gradient(160deg, #ee0979 0%, #ff6a00 100%);
+  }
+#box2{
+  transform-origin: bottom left;
+  border-radius: 100px 0px 100px 0px;
+  background: linear-gradient(220deg, #ee0979 0%, #ff6a00 100%);
+  }
+#box3{
+  transform-origin: top right;
+  border-radius: 100px 0px 100px 0px;
+  background: linear-gradient(30deg, #ee0979 0%, #ff6a00 100%);
+  }
+#box4{
+  transform-origin: top left;
+  border-radius: 0px 100px 0px 100px;
+  background: linear-gradient(320deg, #ee0979 0%, #ff6a00 100%);
+  }
+  .circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #ffef00;
+    z-index: 100;
+    margin-top: -298px;
+  }
+.line{
+  background: #0f9b0f;
+  margin-top: -130px;
+  width: 25px;
+  height: 310px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.pot{
+  background: #7a2828;
+  border-radius: 0px 0px 40px 40px;
+  width: 250px;
+  height: 100px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+@keyframes scale {
+  0% {
+    scale: 0.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+/* End Flower Animation */
