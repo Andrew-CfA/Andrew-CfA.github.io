@@ -206,6 +206,16 @@ input.fill:focus ~ label, input.fill:valid ~ label {
 
 /* overlapping horizontal slideshow */
 
+::-webkit-scrollbar {
+  background-color: #1e1f26;
+  height: 20px;
+  width: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: #383d4d;
+  border-radius: 99em;
+  border: 6px solid #1e1f26;
+}
 
 h1 {
   font-size: clamp(20px, 2.5vw, 36px);
