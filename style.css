@@ -259,7 +259,7 @@ li.li-project{
 /* Submit Button */
 
 .button-52 {
-  color:var(--blackish);
+  color:white;
   font-size: 16px;
   font-weight: 200;
   letter-spacing: 1px;
@@ -289,6 +289,7 @@ li.li-project{
 .button-52:hover:after {
   top: 0px;
   left: 0px;
+  background-color: darkgreen;
 }
 
 @media (min-width: 768px) {
