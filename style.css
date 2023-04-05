@@ -81,7 +81,8 @@ a:hover, a:active {
   border-radius: 5px; /* 5px rounded corners */
   width: 100%;
   color: black;
-  background-color: white;
+  background-color: whitesmoke;
+  height: 70vh;
   margin-bottom: 50px;
   padding-bottom:50px;
 }
@@ -207,10 +208,11 @@ input{
   font-weight: 700;
   display:block;
   border:none;
-  color:var(--darkblue);
+  
   background-color: #2f2f2f;
   border-bottom:1px solid white;
 }
+
 input:focus { outline:none; }
 .labelword{
   color:var(--darkblue);
