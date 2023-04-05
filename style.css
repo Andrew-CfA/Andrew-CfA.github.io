@@ -54,13 +54,56 @@ section:nth-of-type(odd) {
 
 .center-content{
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
 }
 
 /* End Full Screen Vertical Snap*/
+/* link styling */
+
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color: red;
+}
+
+/* Begin Cards for Skills*/
+/* cards for products */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  width: 100%;
+  color: black;
+  background-color: whitesmoke;
+  height: 70vh;
+  margin-bottom: 50px;
+  padding-bottom:50px;
+}
 
 
+.cardImage {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+
+/* Add some padding inside the card container */
+.cardContainer {
+  padding: 2px 16px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Begin Fonts and text and background */
 p {
   font-size: 16px;
 }
@@ -79,6 +122,12 @@ p {
   color: #ffffff;
 }
 
+.bg-skills {
+  background: var(--darkblue);
+  color: #ffffff;
+  padding: 40px;
+}
+
 .bg-project {
   background: linear-gradient(to right, #2f2f2f 60%, var(--burntsienna) 30%);
   color: #ffffff;
@@ -90,6 +139,12 @@ p {
   color: #ffffff;
   height: 90vh; /* TODO this is how you make one section bleed into another, have the prior vh offset with the next one
                     i.e. 110vh for project and 90vh for contact*/
+}
+
+.jumbotron.jumbotron-opaque{
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
 }
 
 .navbar {
@@ -115,7 +170,7 @@ p {
 .textScrollAnimation {
   overflow:hidden;
   position: relative;
-  height:40px;
+  height:70px;
   font-weight: lighter;
 }
 span1 {
@@ -127,15 +182,15 @@ span1 {
   left: 0;
   -webkit-animation: move 7s;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-delay: 1s;
+  -webkit-animation-delay: 1.5s;
 }
 
 @keyframes move {
 0%  { top: 0px; }
-20% { top: -40px; }
-40% { top: -80px; }
-60% { top: -120px; }
-80% { top: -160px; }
+20% { top: -70px; }
+40% { top: -140px; }
+60% { top: -210px; }
+80% { top: -280px; }
 }
 
 /* End About Me Text Animation */
@@ -153,10 +208,11 @@ input{
   font-weight: 700;
   display:block;
   border:none;
-  color:var(--darkblue);
+  
   background-color: #2f2f2f;
   border-bottom:1px solid white;
 }
+
 input:focus { outline:none; }
 .labelword{
   color:var(--darkblue);
@@ -240,7 +296,7 @@ li.li-project{
 /* Submit Button */
 
 .button-52 {
-  color:var(--blackish);
+  color:white;
   font-size: 16px;
   font-weight: 200;
   letter-spacing: 1px;
@@ -270,6 +326,7 @@ li.li-project{
 .button-52:hover:after {
   top: 0px;
   left: 0px;
+  background-color: darkgreen;
 }
 
 @media (min-width: 768px) {
