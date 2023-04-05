@@ -60,7 +60,7 @@ section:nth-of-type(odd) {
 
 /* End Full Screen Vertical Snap*/
 
-
+/* Begin Fonts and text and background */
 p {
   font-size: 16px;
 }
@@ -92,6 +92,12 @@ p {
                     i.e. 110vh for project and 90vh for contact*/
 }
 
+.jumbotron.jumbotron-opaque{
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+}
+
 .navbar {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -115,7 +121,7 @@ p {
 .textScrollAnimation {
   overflow:hidden;
   position: relative;
-  height:40px;
+  height:70px;
   font-weight: lighter;
 }
 span1 {
@@ -127,15 +133,15 @@ span1 {
   left: 0;
   -webkit-animation: move 7s;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-delay: 1s;
+  -webkit-animation-delay: 1.5s;
 }
 
 @keyframes move {
 0%  { top: 0px; }
-20% { top: -40px; }
-40% { top: -80px; }
-60% { top: -120px; }
-80% { top: -160px; }
+20% { top: -70px; }
+40% { top: -140px; }
+60% { top: -210px; }
+80% { top: -280px; }
 }
 
 /* End About Me Text Animation */
