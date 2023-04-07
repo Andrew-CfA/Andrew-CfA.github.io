@@ -28,37 +28,14 @@ html {
   background-color: #2f2f2f;
 }
 
-/* Full Screen Vertical Snap */
-
-section {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-section:nth-of-type(even) {
-  color: white;
-  background: black;
-}
-
-section:nth-of-type(odd) {
-  color: black;
-  background: white;
-}
 .container-fluid {
   height: 100vh;
 }
-
 .center-content{
   display: flex;
   justify-content:center;
   align-items: center;
 }
-
-/* End Full Screen Vertical Snap*/
 /* link styling */
 
 a:link, a:visited {
@@ -196,7 +173,6 @@ span1 {
 
 /* End About Me Text Animation */
 
-
 /* Input Contact Form CSS Settings */
 .input{
   position: relative;
@@ -330,13 +306,60 @@ li.li-project{
   background-color: darkgreen;
 }
 
-@media(min-width: 768px){
+/* Desktop */
+@media(min-width: 768px){ 
+
+  /* Full Screen Vertical Snap */
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-of-type(even) {
+  color: white;
+  background: black;
+}
+
+section:nth-of-type(odd) {
+  color: black;
+  background: white;
+}
+
+
+/* End Full Screen Vertical Snap*/
   .button-52 {
     padding: 13px 50px 13px;
   }
 }
+/* mobile */
 
 @media (max-width: 767px) {
+
+  /* Full Screen Vertical Snap */
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-of-type(even) {
+  color: white;
+  background: black;
+}
+
+section:nth-of-type(odd) {
+  color: black;
+  background: white;
+}
+
+
+/* End Full Screen Vertical Snap*/
 
   .textScrollAnimation {
     overflow:hidden;
