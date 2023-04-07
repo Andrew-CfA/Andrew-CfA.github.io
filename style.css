@@ -82,7 +82,7 @@ a:hover, a:active {
   width: 100%;
   color: black;
   background-color: whitesmoke;
-  height: 70vh;
+  min-height: 60%;
   margin-bottom: 50px;
   padding-bottom:50px;
 }
@@ -131,7 +131,8 @@ p {
 .bg-project {
   background: linear-gradient(to right, #2f2f2f 60%, var(--burntsienna) 30%);
   color: #ffffff;
-  height:110vh;
+  min-height:110vh;
+  height:fit-content
 }
 
 .bg-contact {
@@ -329,7 +330,35 @@ li.li-project{
   background-color: darkgreen;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {
+
+  .textScrollAnimation {
+    overflow:hidden;
+    position: relative;
+    height: 40px;
+    font-weight: lighter;
+  }
+
+  span1 {
+    color: var(--burntsienna);
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    -webkit-animation: move 7s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 1.5s;
+  }
+  
+  @keyframes move {
+  0%  { top: 0px; }
+  20% { top: -40px; }
+  40% { top: -80px; }
+  60% { top: -120px; }
+  80% { top: -160px; }
+  }
+
   .button-52 {
     padding: 13px 50px 13px;
   }
