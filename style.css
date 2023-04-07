@@ -97,6 +97,7 @@ p {
 .bg-about-2 {
   background: linear-gradient(to right, #2f2f2f 60%, var(--burntsienna) 30%);
   color: #ffffff;
+  
 }
 
 .bg-skills {
