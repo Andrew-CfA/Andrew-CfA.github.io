@@ -100,11 +100,7 @@ p {
   
 }
 
-.bg-skills {
-  background: var(--darkblue);
-  color: #ffffff;
-  padding: 40px;
-}
+
 
 .bg-project {
   background: linear-gradient(to right, #2f2f2f 60%, var(--burntsienna) 30%);
