@@ -330,6 +330,12 @@ li.li-project{
   background-color: darkgreen;
 }
 
+@media(min-width: 768px){
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
 @media (max-width: 767px) {
 
   .textScrollAnimation {
@@ -357,10 +363,6 @@ li.li-project{
   40% { top: -80px; }
   60% { top: -120px; }
   80% { top: -160px; }
-  }
-
-  .button-52 {
-    padding: 13px 50px 13px;
   }
 }
 
