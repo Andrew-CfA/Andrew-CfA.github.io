@@ -313,8 +313,9 @@ li.li-project{
   /* Full Screen Vertical Snap */
 
 section {
+  /* TODO took out vertical snap for now
   scroll-snap-align: start;
-  scroll-snap-stop: always;
+  scroll-snap-stop: always;*/ 
   
   display: flex;
   align-items: center;
