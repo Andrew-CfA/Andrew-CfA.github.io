@@ -336,9 +336,9 @@ section:nth-of-type(odd) {
     padding: 13px 50px 13px;
   }
 }
-/* mobile */
 
-@media (max-width: 767px) {
+/* mobile */
+@media (max-width: 992px) {
 
   /* Full Screen Vertical Snap */
 
