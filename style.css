@@ -367,6 +367,10 @@ section:nth-of-type(odd) {
     font-weight: lighter;
   }
 
+  p{
+    font-size: 12px;
+  }
+  
   span1 {
     color: var(--burntsienna);
     display: inline-block;
